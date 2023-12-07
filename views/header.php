@@ -27,7 +27,7 @@
                         <a class="nav-link" href="book.php">Book</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Steam</a>
+                        <a class="nav-link" href="steam.php">Steam</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Unbeliveble Feature!</a>
