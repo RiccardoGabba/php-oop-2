@@ -6,7 +6,7 @@ $steam = Steam::fetchAll();
 
 
 <section>
-    <h2>STEAM</h2>
+    <h2>Steam</h2>
 
     <div class="row">
         <?php foreach ($steam as $steam){
