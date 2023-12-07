@@ -9,8 +9,8 @@ $steam = Steam::fetchAll();
     <h2>Steam</h2>
 
     <div class="row">
-        <?php foreach ($steam as $steam){
-            $steam->printSteam();
+        <?php foreach ($steam as $pippo){
+            $pippo->printSteam();
         } ?>
     </div>
 </section>
