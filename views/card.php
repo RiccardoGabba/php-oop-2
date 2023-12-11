@@ -11,8 +11,15 @@
             <div class="d-flex justify-content-between align-items-flex-start">
                 <?= $custom ?>
                 <div>
-                <?= $price ?>
-                <?= $quantity ?>
+                    <div >
+                        <?= $price ?>
+                        <?php echo "&#8364" ?>
+                    </div>
+
+                    <div>
+                        <?php echo "Quantity:" ?>
+                        <?= $quantity ?>
+                    </div>
                 </div>
             </div>
         </div>

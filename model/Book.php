@@ -42,8 +42,7 @@ class Book
 
         $books = [];
         foreach ($bookList as $book) {
-            $quantity = rand(0, 100);
-            $price = rand (10, 100);
+
             $books[] = new Book($book['_id'], $book['title'],  $book['longDescription'], $book['thumbnailUrl'], $book['price'], $book['quantity']);
             
         }
