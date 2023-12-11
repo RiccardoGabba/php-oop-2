@@ -9,13 +9,17 @@ class Book
 
     public $thumbnailUrl;
 
+    public $price;
+    public $quantity;
 
-    function __construct($id, $title, $longDescription, $thumbnailUrl)
+    function __construct($id, $title, $longDescription, $thumbnailUrl, $price, $quantity)
     {
         $this->id = $id;
         $this->title = $title;
         $this->thumbnailUrl = $thumbnailUrl;
         $this->longDescription = $longDescription;
+        $this->price = $price;
+        $this->quantity = $quantity;
     }
 
     public function printBooks()
@@ -24,6 +28,8 @@ class Book
         $title = $this->title;
         $custom = '';
         $content = $this->longDescription;
+        $price = $this->price;
+        $quantity = $this->quantity;
         
 
         include __DIR__ . '/../views/card.php';
@@ -36,8 +42,9 @@ class Book
 
         $books = [];
         foreach ($bookList as $book) {
-
-            $books[] = new Book($book['_id'], $book['title'],  $book['longDescription'], $book['thumbnailUrl'],);
+            $quantity = rand(0, 100);
+            $price = rand (10, 100);
+            $books[] = new Book($book['_id'], $book['title'],  $book['longDescription'], $book['thumbnailUrl'], $book['price'], $book['quantity']);
             
         }
         return $books;

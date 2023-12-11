@@ -9,6 +9,7 @@ include __DIR__."/model/movie.php";
         <div class="row">
             <?php foreach($movies as $movie) {
                 $movie->printCard();
+                
             } ?>
         </div>
 
